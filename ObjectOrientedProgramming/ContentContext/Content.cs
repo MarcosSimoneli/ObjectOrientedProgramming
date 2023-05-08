@@ -2,7 +2,7 @@
 {
     public abstract class Content
     {
-        public Content()
+        protected Content()
         {
             Id =  Guid.NewGuid();
         }
