@@ -1,12 +1,14 @@
-﻿namespace ObjectOrientedProgramming.ContentContext
+﻿using ObjectOrientedProgramming.NotificationContext;
+
+namespace ObjectOrientedProgramming.ContentContext
 {
-    public class CareerItem
+    public class CareerItem : Base
     {
         public CareerItem(int order, string title, string description, Course course)
         {
             if (course == null)
             {
-                throw new Exception("O curso não pode ser nulo");
+                AddNotification(new Notification("Course", "Curso inválido"));
             }
             Order = order;
             Title = title;
