@@ -1,8 +1,9 @@
 ﻿namespace ObjectOrientedProgramming.ContentContext
 {
-    public class Carrer : Content
+    public class Career : Content
     {
-        public Carrer()
+        public Career(string title, string url) 
+            : base(title, url)
         {
             Items = new List<CareerItem>();
         }

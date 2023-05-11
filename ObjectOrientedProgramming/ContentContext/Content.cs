@@ -2,9 +2,11 @@
 {
     public abstract class Content
     {
-        protected Content()
+        protected Content(string title, string url)
         {
             Id =  Guid.NewGuid();
+            Title = title;
+            Url = url;
         }
 
         public Guid Id { get; set; }
