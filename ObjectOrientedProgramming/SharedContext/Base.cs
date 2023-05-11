@@ -1,6 +1,6 @@
 ﻿using ObjectOrientedProgramming.NotificationContext;
 
-namespace ObjectOrientedProgramming.ContentContext
+namespace ObjectOrientedProgramming.SharedContext
 {
     public abstract class Base : Notifiable
     {

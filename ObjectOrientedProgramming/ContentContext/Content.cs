@@ -1,4 +1,6 @@
-﻿namespace ObjectOrientedProgramming.ContentContext
+﻿using ObjectOrientedProgramming.SharedContext;
+
+namespace ObjectOrientedProgramming.ContentContext
 {
     public abstract class Content : Base
     {
