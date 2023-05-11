@@ -1,4 +1,5 @@
 ﻿using ObjectOrientedProgramming.ContentContext;
+using ObjectOrientedProgramming.SubscriptionContext;
 
 namespace ObjectOrientedProgramming
 {
@@ -54,6 +55,10 @@ namespace ObjectOrientedProgramming
                     }
                 }
             }
+
+            var payPal = new PayPalSubscription();
+            var student = new Student();
+            student.CreateSubscription(payPal);
 
         }
 
